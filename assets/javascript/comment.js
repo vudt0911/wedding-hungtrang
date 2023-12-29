@@ -51,7 +51,7 @@ function createComment(name, comment) {
 
   const replyButton = document.createElement("button");
   replyButton.className = "reply-btn";
-  replyButton.textContent = "Balas";
+  replyButton.textContent = "Hồi đáp";
   commentBox.appendChild(replyButton);
 
   const replyContainer = document.createElement("div");
@@ -68,18 +68,18 @@ function createReplyForm() {
   const nameInput = document.createElement("input");
   nameInput.className = "reply-name";
   nameInput.type = "text";
-  nameInput.placeholder = "Nama Anda";
+  nameInput.placeholder = "Tên của bạn";
   replyForm.appendChild(nameInput);
 
   const commentInput = document.createElement("textarea");
   commentInput.className = "reply-comment";
-  commentInput.placeholder = "Tulis balasan Anda...";
+  commentInput.placeholder = "Viết câu trả lời của bạn...";
   commentInput.rows = 3;
   replyForm.appendChild(commentInput);
 
   const submitButton = document.createElement("button");
   submitButton.className = "submit-reply-btn";
-  submitButton.textContent = "Kirim Balasan";
+  submitButton.textContent = "Gửi trả lời";
   replyForm.appendChild(submitButton);
 
   return replyForm;
